@@ -4,11 +4,14 @@
 
 ```html
 <style>
+ * {
+    margin: 0;
+    padding: 0;
+}  
 .slide {
-    height: 500px;
+    height: 200px;
     width: 100%;
 }
-
 .left-slide {
     color: white;
     font-size: 50px;
@@ -25,15 +28,15 @@
 </style>   
 <body>
   <div id='wrapper' class='left-wraper'>
-    <div class="left-slide slide"></div>
-    <div class="right-slide slide"></div>
-	</div>
+     <div class="left-slide slide"><p>左滑部分</p></div>
+     <div class="right-slide slide"><p>删除</p></div>
+  </div>
 </body>
 
 <script>
-const wrapper1 = document.getElementById('wrapper1');
-new LeftWrapper(wrapper1, {
-    slideWidth: 200
+const wrapper = document.getElementById('wrapper');
+new LeftWrapper(wrapper, {
+    slideWidth: 100
 });
 </script>
 
