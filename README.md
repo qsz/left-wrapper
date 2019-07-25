@@ -42,9 +42,14 @@ new LeftWrapper(wrapper, {
 
 ```
 
-## 参数
+Using npm
+```js
+$ npm install left-wrapper --save
+```
+
+## params
 
 * wrapper：HTMLElement对象
 * opts：配置
-  * slideWidth    左滑最大值，number类型
+  * slideWidth     左滑最大值，number类型
   * duration       滑动结束后动画持续时间，单位ms。非必填，默认300
